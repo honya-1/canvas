@@ -1,0 +1,140 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+
+
+.background_yellow{
+  background-image: url(index.png);
+  background-repeat:no-repeat;
+  background-size:cover;
+
+}
+
+
+a {
+  color: #00B7FF;
+}
+
+video{
+  display: none;
+}
+
+#button_02_load{
+  width: 80px;
+  height: 40px;
+  margin: 0px 0px 10px 0px;
+}
+
+
+
+.original{
+  border : 1px solid #0000FF;
+  background-color: #FFFFFF;
+}
+
+
+
+.a{
+  background: #FFFFFF
+}
+
+
+#video{
+  position: absolute;
+  /*border : 1px solid #0000FF;*/
+  max-width: 80%;
+  z-index:1;
+}
+
+#canvas{
+  position: relative;
+  /*border : 1px solid #0000FF;*/
+  max-width: 80%;
+  z-index:2;
+}
+
+#drawCanvas{
+  position: relative;
+  display: none;
+  /*border : 1px solid #000000;*/
+  max-width: 80%;
+}
+
+
+.canvas{
+  border: 10px solid #c21500;
+  border-image: linear-gradient(to right, #c21500 0%, #ffc500 100%);
+  border-image-slice: 1;
+}
+
+
+.dougaDiv{
+  display:none;
+}
+
+.cameraDiv{
+  display:none;
+}
+
+
+
+
+#edit_02_slider{
+  width: 400px;
+}
+#edit_02_url{
+  width: 300px;
+}
+
+#dougaDiv{
+  width:100%;
+  margin: 0px 0px 10px 0px;
+}
+#dougaDiv > span{
+  margin: 0px 50px 0px 0px;
+}
+.option{
+  width:250px;
+}
+.color > a{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+  }
+  .black{
+    background-color: #000000;
+  }
+  .red{
+    background-color: #ff0000;
+  }
+  .orange{
+    background-color: #E67926;
+  }
+  .yellow{
+    background-color: #FFFF00;
+  }
+  .green{
+    background-color: #008000;
+  }
+  .blue{
+    background-color: #0000ff;
+  }
+  .ai{
+    background-color: #134A63;
+  }
+  .purple{
+    background-color: #800080;
+  }
+  .white{
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+  }
+
+  .bold > a{
+    background-color: #FFFFFF;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+    }

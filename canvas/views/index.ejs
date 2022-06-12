@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>ようこそ <%= title %> へ</p>
+    <% for(var i in link){ %>
+      <% var obj=link[i] %>
+      <p><a href="<%= obj.href %>"><%= obj.text %></a></p>
+    <% } %>
+  </body>
+</html>

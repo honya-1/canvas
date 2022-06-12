@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title><%= title %></title>
+	<script src="/socket.io/socket.io.js"></script>
+	<link type="text/css" rel="stylesheet" href="/stylesheets/style.css">
+	<script type="text/javascript" src="/javascripts/sketch.js"></script>
+</head>
+<body class="background_yellow">
+	<h1>CANVAS</h1>
+	<button id="camera" class="button">カメラ</button>
+	<button id="douga" class="button">動画</button></br>
+	<h2>動画表示</h2>
+
+	<%# カメラの入出力関連  %>
+	<%# カメラ取り込み表示場所 %>
+
+
+	<div class="dougaDiv douga">
+		URL:
+		<input id="edit_02_url" value="https://youtu.be/qMgZ3bmVObk"></input></br>
+		<input type="button" id="button_02_load" class="button" value="読み込み" ></br>
+		<button id="sousa_canvas" class="button">canvas操作</button>
+		<button id="sousa_movie" class="button">動画操作</button>
+	</div>
+
+	<div class="cameraDiv">
+		<button id="start" class="button">開始</button>
+		<button id="end" class="button">終了</button>
+	</div>
+	<button id="clear" class="button">クリア</button>
+
+<%#  描画に関する設定  %>
+<div class="option">
+		<div class="color">
+			色：</br>
+			<a class="setColor black" 	data-setColor="0,0,0,1"			></a>
+			<a class="setColor red" 		data-setColor="255,0,0,1"		></a>
+			<a class="setColor orange" 	data-setColor="230,121,40,1"></a>
+			<a class="setColor yellow" 	data-setColor="255,255,0,1"	></a>
+			<a class="setColor green" 	data-setColor="0,128,0,1"		></a>
+			<a class="setColor blue" 		data-setColor="0,0,255,1"		></a>
+			<a class="setColor ai" 			data-setColor="19,74,99"		></a>
+			<a class="setColor purple" 	data-setColor="128,0,128,1"	></a>
+			<a class="setColor white" 	data-setColor="255,255,255,1"></a>
+		</div>
+		<div class="bold">
+      太さ：
+      <a class="setBold small" data-bold="1">小</a>
+      <a class="setBold middle" data-bold="5">中</a>
+      <a class="setBold large" data-bold="10">大</a>
+    </div>
+  </div></br>
+
+
+<%# ----canvasの下地の動画------- %>
+	<iframe id="video" class="canvas a" width=1080 height=720></iframe>
+
+<%# ------出力するcanvas-------- %>
+		<canvas id="canvas" class="canvas" width="1080" height="720"></canvas>
+
+<%# 一度書いたものを描画する場所 %>
+	<canvas id="drawCanvas" width="1080" height="720"></canvas></br>
+	<video id="video_original" width="1080" height="720"autoplay></video>
+
+</body>
+
+</html>
